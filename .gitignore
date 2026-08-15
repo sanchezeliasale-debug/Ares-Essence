@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+package.json
+
+# Fotos de fabricante/revendedor descargadas para referencia — no usar en el sitio
+# por derechos de autor (ver README). No se suben al repo.
+img/Fotos Perfumes/
+
+.DS_Store
+Thumbs.db
