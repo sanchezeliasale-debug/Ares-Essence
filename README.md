@@ -26,7 +26,9 @@ El logo (ícono del carnero + isotipo completo) está en `img/ares-essence-icon.
 
 ## Fotos
 
-Las fotos del hero de Inicio (`img/hero-inicio.jpg`) y de Nosotros (`img/nosotros-hero.jpg`) ya están cargadas. Los 8 perfumes del catálogo ya tienen foto real (fondo blanco, estilo catálogo de producto):
+Las fotos del hero de Inicio (`img/hero-inicio.jpg`) y de Nosotros (`img/nosotros-hero.jpg`) ya están cargadas. Los 12 perfumes del catálogo ya tienen foto real (fondo blanco, estilo catálogo de producto):
+
+**En stock:**
 - Hawas For Him → `img/product-hawas-for-him.jpg` (también en "Destacados" de Inicio)
 - Armaf Urban Man Elixir → `img/product-urban-man-elixir.jpg` (también en "Destacados" de Inicio)
 - Lattafa Khamrah → `img/product-khamrah.jpg` (también en "Destacados" de Inicio)
@@ -35,6 +37,14 @@ Las fotos del hero de Inicio (`img/hero-inicio.jpg`) y de Nosotros (`img/nosotro
 - French Avenue Vulcan Feu → `img/product-vulcan-feu.jpg`
 - Rayhaan Obsidian → `img/product-obsidian.jpg`
 - Rayhaan Tropical Vibe → `img/product-tropical-vibe.jpg`
+
+**Sin stock** (aparecen al final del catálogo, en gris, con badge "Sin stock" y un botón que abre WhatsApp con un mensaje precargado en vez de "Ver en Tiendanube"):
+- Armaf Club De Nuit Intense Man → `img/product-intense-man.jpg`
+- Lattafa The Kingdom → `img/product-the-kingdom.jpg`
+- Lattafa Asad → `img/product-asad.jpg`
+- AFNAN 9pm → `img/product-9pm.jpg`
+
+Estos 4 no están en el quiz ni en "Destacados" de Inicio (no tiene sentido recomendar algo que no se puede comprar). Cuando vuelvan a tener stock: sacá la clase `product-card--soldout` del `<div>`, sacá el `<div class="stock-badge">Sin stock</div>` y volvé a poner el botón `<a href="https://aresessence.mitiendanube.com/" class="btn-outline" target="_blank" rel="noopener">Ver en Tiendanube</a>` en vez del de WhatsApp — y si querés, sumalo también a `js/quiz.js` siguiendo la sección de abajo.
 
 Si en algún momento cambiás una foto o agregás un producto nuevo:
 
@@ -49,7 +59,7 @@ Si en algún momento cambiás una foto o agregás un producto nuevo:
 
 ```
 index.html          Inicio
-catalogo.html       Catálogo (8 perfumes)
+catalogo.html       Catálogo (8 en stock + 4 sin stock)
 test.html           Encontrá tu fragancia (quiz)
 nosotros.html       Nosotros
 contacto.html       Contacto

@@ -369,6 +369,34 @@ img {
   height: 460px;
 }
 
+.product-media {
+  position: relative;
+}
+
+.product-card--soldout .img-placeholder {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+.product-card--soldout .product-name,
+.product-card--soldout .product-notes {
+  opacity: 0.6;
+}
+
+.stock-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .product-name {
   font-family: var(--font-serif);
   font-size: 20px;
