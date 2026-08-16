@@ -10,6 +10,7 @@
       notes: 'Bergamota, canela, notas acuáticas y ámbar gris',
       occasion: 'Todo el año · versátil, día y noche',
       why: 'Aromático y acuático, versátil de la mañana a la noche: bergamota y canela arriba, un fondo amaderado con ámbar gris que nunca cansa.',
+      img: 'img/product-hawas-for-him.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     urban: {
@@ -17,6 +18,7 @@
       notes: 'Bergamota, azahar, vetiver y ámbar',
       occasion: 'Otoño-invierno · noche y eventos formales',
       why: 'Ámbar denso y cálido con un fondo ahumado: pensado para dejar huella en eventos formales y salidas nocturnas.',
+      img: 'img/product-urban-man-elixir.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     khamrah: {
@@ -24,6 +26,7 @@
       notes: 'Canela, dátiles, praliné y vainilla',
       occasion: 'Otoño-invierno · noche',
       why: 'Gourmand especiado y dulce, con dátiles y praliné: ideal si te gustan las fragancias cálidas y golosas de noche.',
+      img: 'img/product-khamrah.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     precieux: {
@@ -31,6 +34,7 @@
       notes: 'Piña, caramelo, pimienta rosa y ámbar amaderado',
       occasion: 'Todo el año · día y noche',
       why: 'Un oriental amaderado versátil: la frescura frutal de la piña y la calidez del ámbar lo hacen funcionar en cualquier ocasión.',
+      img: 'img/product-precieux-i.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     atlantis: {
@@ -38,6 +42,7 @@
       notes: 'Naranja, sandía, coco y cacao amaderado',
       occasion: 'Primavera-verano · día',
       why: 'Cítricos, sandía y coco sobre un fondo de cacao y ámbar: tu opción para el verano, con una proyección que se nota.',
+      img: 'img/product-atlantis-extrait.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     vulcanfeu: {
@@ -45,6 +50,7 @@
       notes: 'Mango, jengibre, jazmín y praliné',
       occasion: 'Todo el año · tarde-noche',
       why: 'Mango y praliné sobre flores y maderas cálidas: dulce, llamativo y con muchísima proyección, ideal para la noche.',
+      img: 'img/product-vulcan-feu.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     obsidian: {
@@ -52,6 +58,7 @@
       notes: 'Iris, cítricos, cuero y oud amaderado',
       occasion: 'Otoño-invierno · noche, eventos formales',
       why: 'Cuero, oud y maderas sobre un top fresco de iris y cítricos: intenso, sofisticado y pensado para eventos formales de noche.',
+      img: 'img/product-obsidian.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     },
     tropicalvibe: {
@@ -59,6 +66,7 @@
       notes: 'Mango, piña, coco y flores blancas',
       occasion: 'Primavera-verano · uso diurno',
       why: 'Mango, piña y coco con un fondo amaderado suave: fresco, playero y perfecto para el día a día en clima cálido.',
+      img: 'img/product-tropical-vibe.jpg',
       link: 'https://aresessence.mitiendanube.com/'
     }
   };
@@ -269,7 +277,7 @@
     ranked.forEach(function (item, idx) {
       var p = PERFUMES[item.key];
       html += '<div class="match-card' + (idx === 0 ? ' match-card--first' : '') + '">';
-      html += '<div class="match-card__img">Foto — ' + p.name + '</div>';
+      html += '<img src="' + p.img + '" alt="' + p.name + '" class="match-card__img">';
       html += '<div>';
       html += '<div class="match-card__rank">' + labels[idx] + '</div>';
       html += '<div class="match-card__name">' + p.name + '</div>';
