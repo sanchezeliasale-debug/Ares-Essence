@@ -26,14 +26,19 @@ El logo (ícono del carnero + isotipo completo) está en `img/ares-essence-icon.
 
 ## Fotos
 
-Las fotos del hero de Inicio (`img/hero-inicio.jpg`) y de Nosotros (`img/nosotros-hero.jpg`) ya están cargadas. De los 8 perfumes del catálogo, 3 ya tienen foto real (fondo blanco, estilo catálogo de producto):
-- Hawas For Him → `img/product-hawas-for-him.jpg`
-- Armaf Urban Man Elixir → `img/product-urban-man-elixir.jpg`
-- Lattafa Khamrah → `img/product-khamrah.jpg` (también se usa en "Destacados" de Inicio)
+Las fotos del hero de Inicio (`img/hero-inicio.jpg`) y de Nosotros (`img/nosotros-hero.jpg`) ya están cargadas. Los 8 perfumes del catálogo ya tienen foto real (fondo blanco, estilo catálogo de producto):
+- Hawas For Him → `img/product-hawas-for-him.jpg` (también en "Destacados" de Inicio)
+- Armaf Urban Man Elixir → `img/product-urban-man-elixir.jpg` (también en "Destacados" de Inicio)
+- Lattafa Khamrah → `img/product-khamrah.jpg` (también en "Destacados" de Inicio)
+- Armaf Club De Nuit Precieux I → `img/product-precieux-i.jpg`
+- French Avenue Atlantis Extrait → `img/product-atlantis-extrait.jpg`
+- French Avenue Vulcan Feu → `img/product-vulcan-feu.jpg`
+- Rayhaan Obsidian → `img/product-obsidian.jpg`
+- Rayhaan Tropical Vibe → `img/product-tropical-vibe.jpg`
 
-Los otros 5 (Precieux I, Atlantis, Vulcan Feu, Obsidian, Tropical Vibe) siguen con placeholder (recuadro con el nombre). Para poner una foto real:
+Si en algún momento cambiás una foto o agregás un producto nuevo:
 
-1. Guardá la imagen en la carpeta `img/`. Si tiene fondo blanco como las 3 ya cargadas, usá:
+1. Guardá la imagen en la carpeta `img/`. Si tiene fondo blanco como las que ya están cargadas, usá:
    ```html
    <img src="img/nombre-del-archivo.jpg" alt="Nombre del perfume" class="img-placeholder" style="object-fit:contain;background:#fff">
    ```
