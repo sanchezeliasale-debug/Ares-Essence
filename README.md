@@ -55,6 +55,21 @@ Si en algún momento cambiás una foto o agregás un producto nuevo:
    Si es una foto con fondo oscuro/neutro (como el hero o la de Nosotros), usá `object-fit:cover` sin el `background:#fff`.
 2. Reemplazá el `<div class="img-placeholder">...</div>` correspondiente por ese `<img>` (mantené la clase `img-placeholder`).
 
+## Videos
+
+En Inicio, entre "100% originales" y "Destacados", hay 2 videos en loop (mudos, sin controles, autoplay) mostrando Armaf Club De Nuit Precieux I y Lattafa Khamrah: `img/video/precieux-i.mp4` y `img/video/khamrah.mp4`.
+
+Se comprimieron con ffmpeg (se les sacó el audio, se bajó la resolución a 960px de ancho y el bitrate) para que no pesen tanto — igual pesan unos MB, así que se cargan recién cuando el usuario está por llegar a esa sección (ver `js/main.js`, el `IntersectionObserver` que busca `.brand-video`), no al abrir la página.
+
+Para agregar o cambiar un video:
+1. Comprimilo primero (un video de celular sin comprimir puede pesar 20MB+, demasiado para una web). Con ffmpeg: `ffmpeg -i original.mp4 -an -vf "scale=960:-2" -c:v libx264 -crf 26 -preset slow -movflags +faststart img/video/nombre.mp4`
+2. Guardalo en `img/video/`.
+3. En `index.html`, agregá o editá:
+   ```html
+   <video class="brand-video" muted loop playsinline preload="none" data-src="img/video/nombre.mp4" aria-label="Descripción del video"></video>
+   ```
+   (usá `data-src`, no `src` — el JS se encarga de cargarlo cuando corresponde).
+
 ## Estructura
 
 ```

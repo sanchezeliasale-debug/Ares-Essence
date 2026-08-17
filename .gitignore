@@ -6,5 +6,8 @@ package.json
 # por derechos de autor (ver README). No se suben al repo.
 img/Fotos Perfumes/
 
+# Videos originales sin comprimir (los que usa el sitio están en img/video/)
+Videos/
+
 .DS_Store
 Thumbs.db

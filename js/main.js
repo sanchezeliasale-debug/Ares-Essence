@@ -16,3 +16,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Carga los videos de fondo recién cuando están por entrar en pantalla,
+// para no pesar la carga inicial de la página.
+document.addEventListener('DOMContentLoaded', function () {
+  var videos = document.querySelectorAll('.brand-video');
+  if (!videos.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    videos.forEach(function (video) {
+      video.src = video.getAttribute('data-src');
+      video.load();
+    });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var video = entry.target;
+      video.src = video.getAttribute('data-src');
+      video.load();
+      video.play().catch(function () {});
+      observer.unobserve(video);
+    });
+  }, { rootMargin: '200px' });
+
+  videos.forEach(function (video) {
+    observer.observe(video);
+  });
+});
