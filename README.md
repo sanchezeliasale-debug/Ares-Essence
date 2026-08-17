@@ -17,7 +17,7 @@ Buscá `href="#"` en los archivos `.html` y reemplazá por los links reales:
 1. ~~**Instagram**~~ — ya cargado: https://www.instagram.com/_aresessence/
 2. ~~**WhatsApp**~~ — ya cargado: +54 11 2478-1293
 3. ~~**Email**~~ — ya cargado: aresessenceparfum@gmail.com
-4. **TikTok** — en el header (ícono), en "Seguí a Ares Essence" (Inicio), en Contacto y en el footer.
+4. **TikTok** — todavía no está activo, así que en vez de link muestra "Próximamente" (atenuado, sin click) en el header, "Seguí a Ares Essence" (Inicio), la tarjeta de Contacto y el footer. Cuando tengas la cuenta: buscá la clase `is-disabled` en los 5 `.html` (5 apariciones) y sacala, agregá el `href="https://www.tiktok.com/@tu-usuario" target="_blank" rel="noopener"`, y en el ícono del header sacá el `(Próximamente)` del `title`; en la tarjeta de Contacto (`contacto.html`) reemplazá "Próximamente" por tu `@usuario`.
 5. ~~**Tiendanube**~~ — ya cargado: https://aresessence.mitiendanube.com/ (ícono del header, botón en Inicio, tarjeta destacada en Contacto, footer, y el botón "Ver en Tiendanube" de los 8 productos en `catalogo.html` y en `test.html`/`js/quiz.js`). Por ahora todos los productos apuntan a la home de la tienda — cuando cargues cada perfume en Tiendanube y tengas la URL de su ficha, reemplazá el link de ese producto puntual (en `catalogo.html` y en el campo `link` de `js/quiz.js`) para que lleve directo a esa publicación.
 
 ## Logo

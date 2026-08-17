@@ -30,6 +30,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Redes/canales que todavía no están activos (ej. TikTok): visible pero no clickeable. */
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
 body {
   margin: 0;
   background: var(--bg);

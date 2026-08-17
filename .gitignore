@@ -2,9 +2,16 @@ node_modules/
 package-lock.json
 package.json
 
-# Fotos de fabricante/revendedor descargadas para referencia — no usar en el sitio
-# por derechos de autor (ver README). No se suben al repo.
+# Fotos de fabricante/revendedor e infografías de notas/acordes (tipo Fragrantica)
+# descargadas para referencia — no usar en el sitio por derechos de autor (ver README).
+# No se suben al repo.
 img/Fotos Perfumes/
+img/ATLANTIS/
+img/Khamrah/
+img/Wahas/
+img/tropical/
+img/urban Man/
+img/vulcan/
 
 # Videos originales sin comprimir (los que usa el sitio están en img/video/)
 Videos/
